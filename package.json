@@ -10,7 +10,7 @@
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
-    "uptag": "npm run tag && git push origin $npm_package_version",
+    "uptag": "git push --tags",
     "prepublish": "npm run log && npm publish"
   },
   "keywords": [],
