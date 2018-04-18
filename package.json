@@ -1,26 +1,43 @@
 {
-  "name": "storybook-react",
+  "name": "storybook-react-tongchuan",
   "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "tag": "git tag v$npm_package_version",
+    "tag": "git tag v$npm_package_version -m\"打版本$npm_package_version\"",
     "log": "npm run patch && git-changelog -t false -a \"My nice application\"",
     "patch": "npm version patch",
     "minor": "npm version minor",
-    "major": "npm version major"
+    "major": "npm version major",
+    "uptag": "npm run tag && git push origin $npm_package_version",
+    "prepublish": "npm run log && npm publish"
   },
   "keywords": [],
-  "author": "",
+  "author": "zhangtongchuan <tongchuanxing@163.com>",
   "license": "ISC",
   "devDependencies": {
     "@storybook/react": "^3.4.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:tongchuan/storybook-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tongchuan/storybook-react/issues"
+  },
+  "homepage": "https://github.com/tongchuan/storybook-react#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "git-changelog": "^1.1.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
-  }
+  },
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "src/",
+    "stories/",
+    ".storybook/"
+  ]
 }
