@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "log":"git-changelog -t false -a \"My nice application\""
-
+    "tag": "git tag v$npm_package_version",
+    "log":"npm run patch && git-changelog -t false -a \"My nice application\"",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major"
   },
   "keywords": [],
   "author": "",
