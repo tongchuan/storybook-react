@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "log":"git-changelog -t false -a \"My nice application\""
+
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
   },
   "dependencies": {
     "babel-core": "^6.26.0",
+    "git-changelog": "^1.1.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   }

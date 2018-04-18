@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add react react-dom babel-core
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.7.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "teststorybook",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "storybook": "start-storybook -p 9001 -c .storybook",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@storybook/react": "^3.4.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/usr/local/share/.cache/yarn/v1/npm-ansi-styles-3.2.1-41fbb20243e50b12be0f04b8dedbf07520ce841d/index.js' -> '/ztc.git.com/git_test/teststorybook/node_modules/@storybook/core/node_modules/ansi-styles/index.js'
