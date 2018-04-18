@@ -4,7 +4,13 @@
 
 _Git changelog is a utility tool for generating changelogs. It is free and opensource. :)_
 
-## v1.0.0 false ( Wed Apr 18 2018 10:36:06 GMT+0800 (CST) )
+## v1.0.0 false ( Wed Apr 18 2018 10:38:32 GMT+0800 (CST) )
+
+
+## Bug Fixes
+  - **log**
+    - 添加日志命令和日志模板_ (9e9bd652bff762b79d6e36ccda905be70a32751e)
+
 
 
 
