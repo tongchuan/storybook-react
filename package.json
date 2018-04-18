@@ -1,12 +1,12 @@
 {
   "name": "storybook-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
     "tag": "git tag v$npm_package_version",
-    "log":"npm run patch && git-changelog -t false -a \"My nice application\"",
+    "log": "npm run patch && git-changelog -t false -a \"My nice application\"",
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major"
