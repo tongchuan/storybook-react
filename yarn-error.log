@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add react-bootstrap
+  /usr/local/bin/node /usr/local/bin/yarn
 
 PATH: 
-  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 Yarn version: 
   1.5.1
@@ -16,13 +16,14 @@ Platform:
 npm manifest: 
   {
     "name": "storybook-react-tongchuan",
-    "version": "1.1.6",
+    "version": "1.1.8",
     "description": "",
     "main": "index.js",
     "scripts": {
       "storybook": "start-storybook -p 9001 -c .storybook",
       "tag": "git tag v$npm_package_version -m\"打版本$npm_package_version\"",
-      "log": "npm run patch && git-changelog -t false -a \"My nice application\"",
+      "log": "git-changelog -t false -a \"My nice application\" -V $npm_package_version -tpl myCustomTemplate.md -f CHANGELOG.md",
+      "logs": "git-changelog -t false -a \"My nice application\" --file ztc11.md --app_name $npm_package_name --version_name v$npm_package_version",
       "patch": "npm version patch",
       "minor": "npm version minor",
       "major": "npm version major",
@@ -33,7 +34,8 @@ npm manifest:
     "author": "zhangtongchuan <tongchuanxing@163.com>",
     "license": "ISC",
     "devDependencies": {
-      "@storybook/react": "^3.4.2"
+      "@storybook/react": "^3.4.2",
+      "react-bootstrap": "^0.32.1"
     },
     "repository": {
       "type": "git",
@@ -56,7 +58,13 @@ npm manifest:
       "src/",
       "stories/",
       ".storybook/"
-    ]
+    ],
+    "git_changelog":{
+      "options":{
+        "title": "zhangtongchuan"
+      }
+      
+    }
   }
 
 yarn manifest: 

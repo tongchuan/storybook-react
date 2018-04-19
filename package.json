@@ -6,7 +6,8 @@
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
     "tag": "git tag v$npm_package_version -m\"打版本$npm_package_version\"",
-    "log": "npm run patch && git-changelog -t false -a \"My nice application\"",
+    "log": "git-changelog -t false -a \"My nice application\" -V $npm_package_version -tpl myCustomTemplate.md -f CHANGELOG.md",
+    "logs": "git-changelog -t false -a \"My nice application\" --file ztc11.md --app_name $npm_package_name --version_name v$npm_package_version",
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
@@ -41,5 +42,11 @@
     "src/",
     "stories/",
     ".storybook/"
-  ]
+  ],
+  "git_changelog":{
+    "options":{
+      "title": "zhangtongchuan"
+    }
+    
+  }
 }

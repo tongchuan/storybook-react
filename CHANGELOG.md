@@ -1,10 +1,10 @@
 <img width="300px" src="https://github.com/rafinskipg/git-changelog/raw/master/images/git-changelog-logo.png" />
 
-# Git Changelog
+# storybook-react-tongchuan
 
 _Git changelog is a utility tool for generating changelogs. It is free and opensource. :)_
 
-## v1.0.0 false ( Thu Apr 19 2018 14:50:43 GMT+0800 (CST) )
+## v1.1.8 false ( Thu Apr 19 2018 16:16:41 GMT+0800 (CST) )
 
 
 ## Bug Fixes
