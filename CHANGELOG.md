@@ -4,7 +4,7 @@
 
 _Git changelog is a utility tool for generating changelogs. It is free and opensource. :)_
 
-## v1.1.8 false ( Thu Apr 19 2018 16:25:07 GMT+0800 (CST) )
+## v1.1.9 false ( Thu Apr 19 2018 16:31:48 GMT+0800 (CST) )
 
 
 ## Bug Fixes
@@ -22,6 +22,12 @@ _Git changelog is a utility tool for generating changelogs. It is free and opens
     - 添加测试react-bootstrap组件 (bacb84382e0f99aef7c896f707db76fbc53f507c)
   - **发布**
     - 发布到npmjs上 (305eb56c1d5c3a65a2ddd3dee14bdbeb04088625)    - 发布到npmjs上 (77dd6c3b4099461c49d84bfe9157ef796ae64a3f)    - 发布到npmjs上 (1f3eccb4af1a8016131ba03b9f9586c7615fedc3)
+
+
+
+## Documentation
+  - **更新**
+    - 修改配置 (49f9c51902190c94edc8396fc52b1e2ff8925151)
 
 
 
