@@ -1,0 +1,15 @@
+.buttontest>div{
+  padding-left: 10px;
+}
+.buttontest .btn-toolbar{
+  margin:10px;
+}
+.buttontest .btn-toolbar .btn{
+  margin: 10px;
+}
+
+.bs-example .tooltip{
+  position: relative;
+  display: inline-block;
+  margin: 5px 10px;
+}
