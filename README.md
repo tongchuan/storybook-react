@@ -5,6 +5,8 @@ npm init -y
 npm i -g @storybook/cli
 
 
+
+
 Add @storybook/react
 First of all, you need to add @storybook/react to your project. To do that, simply run:
 
